@@ -17,7 +17,7 @@ from torchvision import transforms
 from utils_webcam import find_landmarks, get_normalized, estimate_gaze, show_proj_gaze, show_landmarks
 
 ### CONFIG ###
-device = "cuda" # change to "cuda" for CUDA inference using GPU
+device = "cpu" # change to "cuda" for CUDA inference using GPU
 
 cap = cv2.VideoCapture(0) # capture frames from webcam 
 cap.set(cv2.CAP_PROP_FRAME_WIDTH,640); # set camera width
