@@ -98,7 +98,7 @@ def estimate_gaze(img_norm, h_pose_norm, gazenet, device="cpu"):
     if device != "cpu":
         ip_tensor = ip_tensor.to(device)
         h_tensor = h_tensor.to(device)
-        out = gazenet(ip_tensor).cpu() # get eye gaze angles
+        out = gazenet(ip_tensor, h_tensor).cpu() # get eye gaze angles
         pred = torch.stack(convert_polar_vector(out), dim = 1) # get eye gaze unit tensor
     else:
         out = gazenet(ip_tensor, h_tensor) # get eye gaze angles
