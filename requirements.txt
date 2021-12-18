@@ -1,0 +1,8 @@
+dlib==19.22.1
+matplotlib==3.5.1
+numpy==1.20.0
+opencv_python==4.5.4.60
+Pillow==8.4.0
+scipy==1.7.3
+torch==1.10.0
+torchvision==0.11.1

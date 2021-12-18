@@ -1,0 +1,11 @@
+# LeNet and Dlib models
+assets/models/gazenet_gh_alex.pt
+assets/shape_predictor_68_face_landmarks.dat
+
+# Training data
+misc/
+data/
+
+# Cache
+code/__pycache__/
+code/.ipynb_checkpoints/
